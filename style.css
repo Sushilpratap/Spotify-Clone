@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Playfair+Display&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(204, 237, 148);
+}
+nav{
+    /* font-family:'Playfair Display', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav ul{
+    display: flex;  /*Makes all items horizontal*/
+    align-items: center;
+    list-style-type: none; /*it removes the dotes of the items*/
+    height:50px;
+    color:white;
+    background-color: black;
+}
+nav ul li{
+    padding:0 12px;
+}
+.brand img{
+    width:50px;
+    padding:0 5px
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.container{
+    /* min-height: 419px; */
+    min-height:75vh;
+    background-color: black;
+    color:white;
+    display:flex;
+    font-family:'Playfair Display', serif;
+    margin:20px auto ;
+    width:75%;
+    border-radius: 12px;
+    padding:10px;
+    background-image:url('photo.png');
+    /* background-image:url('https://st4.depositphotos.com/2760050/23951/i/600/depositphotos_239510216-stock-photo-childhood-happiness-mp3-player-small.jpg'); */
+    /* background-repeat: no-repeat;
+    align-items: right; */
+}
+.bottom{
+    position:sticky;
+    height:90px;
+    /* color:white; */
+    background-color:black;
+    color:white;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.icons{
+    margin-top:15px;
+}
+.icons i{
+    color:white;
+    cursor:pointer;
+}
+#myProgressBar{
+    width:80vw;
+    cursor:pointer;
+}
+.songItem{
+ display:flex;
+ background-color:white;
+ color:black;
+ margin:10px 0;
+ justify-content: space-between;
+ align-items: center;
+ border-radius: 30px;
+}
+.songItem img{
+ width:40px;
+ margin: 0 20px;
+ border-radius: 30px;
+}
+.songItemContainer{
+    margin-top:70px;
+}
+.timeStamp{
+    padding:20px;
+    margin:0 10px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songInfo{
+position : absolute;
+left : 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    /* transform: opacity is ease-in; */
+    transition: opacity 0.4s ease in;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#gif{
+    margin:0 10px;
+}
